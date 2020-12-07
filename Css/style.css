@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.cell {
+	background-color: #bfbfbf;
+	border: 2px solid black;
+	height: 193px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	padding: 35px 10px 8px 10px;
+}
+
+.cell>div {
+	border: 2px solid black;
+	width: 150px;
+	height: 35px;
+	text-align: center;
+	padding-top: 3px;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	font-family: sans-serif;
+	font-size: 22px;
+}
+p {
+	font-size: 16px;
+	text-align: justify;
+}
+
+#head1 {
+	background-color: pink;
+	font-weight: bold;
+}
+
+#head2 {
+	background-color: #c14543 ;
+	font-weight: bold;
+	color: white;
+}
+
+#head3 {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+.row {
+	width: 100%;
+}
+
+/*----For Desktop View----*/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*----For Tablet view----*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-md-12 {
+		float: left;
+		width: 100%;
+	}
+}
+
+/*----For Mobile View----*/
+@media (max-width: 767px) {
+	.col-lg-12 {
+		float: left;
+		width: 100%;
+	}
+}
